@@ -2,7 +2,7 @@ import React, { useState, useId, useCallback, ReactNode } from 'react';
 import { EyeIcon, EyeOffIcon } from '../icons';
 import { getInputType, getButtonAriaAttributes, getInputAriaAttributes } from '../core/logic';
 
-export interface UseSitareOptions {
+export interface UseViraPasswordOptions {
   /**
    * Initial visibility state of the password.
    * @default false
@@ -45,7 +45,7 @@ export interface UseSitareOptions {
   btnProps?: React.ButtonHTMLAttributes<HTMLButtonElement>;
 }
 
-export interface UseSitareResult {
+export interface UseViraPasswordResult {
   inputProps: React.InputHTMLAttributes<HTMLInputElement>;
   btnProps: React.ButtonHTMLAttributes<HTMLButtonElement>;
   isVisible: boolean;
@@ -88,7 +88,7 @@ const mergeProps = <T extends Record<string, any>>(
   return result as T;
 };
 
-export const useSitare = (options: UseSitareOptions = {}): UseSitareResult => {
+export const useViraPassword = (options: UseViraPasswordOptions = {}): UseViraPasswordResult => {
   const {
     defaultVisible = false,
     icons,
@@ -101,7 +101,7 @@ export const useSitare = (options: UseSitareOptions = {}): UseSitareResult => {
 
   const [isVisible, setIsVisible] = useState(defaultVisible);
   const generatedId = useId();
-  const inputId = providedId || `sitare-input-${generatedId}`;
+  const inputId = providedId || `virapassword-input-${generatedId}`;
 
   const toggle = useCallback(() => {
     if (disabled || readOnly) return;

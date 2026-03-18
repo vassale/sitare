@@ -1,56 +1,49 @@
 <div align="center">
-  <img src="./public/sitare.svg" alt="Sitare" width="160" />
+  <img src="./public/hero.jpg" alt="Vira Stack Password" />
 </div>
 
-# Sitare
+<br />
 
-**Fully accessible and customizable password visibility hook for React.**
+<div align="center">
+  <a href="https://www.npmjs.com/package/@virastack/password-toggle">
+    <img src="https://img.shields.io/npm/v/@virastack/password-toggle?style=flat-square&color=black" alt="npm version" />
+  </a>
+  <a href="https://www.npmjs.com/package/@virastack/password-toggle">
+    <img src="https://img.shields.io/npm/dt/@virastack/password-toggle?style=flat-square&color=black" alt="npm downloads" />
+  </a>
+  <a href="https://bundlephobia.com/package/@virastack/password-toggle">
+    <img src="https://img.shields.io/bundlephobia/minzip/@virastack/password-toggle?style=flat-square&color=black" alt="bundle size" />
+  </a>
+</div>
 
-Sitare is a lightweight, framework-agnostic hook designed to handle password visibility toggling with ease. It prioritizes accessibility, offers smart defaults, and allows full customization of icons and UI components.
+<br />
 
-![npm](https://img.shields.io/npm/v/@vassale/sitare)
-![bundlephobia](https://img.shields.io/bundlephobia/minzip/@vassale/sitare)
-![types](https://img.shields.io/npm/types/@vassale/sitare)
-![license](https://img.shields.io/npm/l/@vassale/sitare)
-![npm downloads](https://img.shields.io/npm/dw/@vassale/sitare)
+# ViraStack Password Toggle
 
-## 🚀 Live Demo & Documentation
+Fully accessible and customizable password visibility hook for React.
 
-For interactive demos, full API reference, and advanced usage examples, visit:
+- ♿ **Accessibility First:** Fully ARIA compliant out of the box for better screen reader support.
+- 🧩 **Framework Agnostic:** Logic is separated from React state, making it adaptable and clean.
+- 🎨 **Smart Defaults:** Includes minimal SVG icons by default, so you can start using it immediately.
+- 🔄 **Prop Merging:** Safely merges user props with hook-generated props to prevent overrides.
+- 🔒 **State Sync:** Automatically handles `disabled` and `readOnly` states for a consistent UX.
 
-👉 **[sitare.omergulcicek.com](https://sitare.omergulcicek.com)**
+### [Read the docs →](https://virastack.com/password)
 
----
-
-## ✨ Why Sitare?
-
-Most password visibility implementations are repetitive or lack proper accessibility attributes. Sitare provides a robust, "React-First" solution.
-
-* **🧩 Framework Agnostic Core:** Logic is separated from React state, making it adaptable and clean.
-* **♿ Accessibility First:** Fully ARIA compliant out of the box for better screen reader support.
-* **🎨 Smart Defaults:** Includes minimal SVG icons by default, so you can start using it immediately.
-* **🛠️ Customizable:** Use your own icons or UI components to match your design system.
-* **🔄 Prop Merging:** Safely merges user props with hook-generated props to prevent overrides.
-* **🔒 State Sync:** Automatically handles `disabled` and `readOnly` states for a consistent UX.
-
-## 🚀 Installation
+## Quick Start
 
 ```bash
-npm install @vassale/sitare
+npm install @virastack/password-toggle
 ```
 
-## 🛠️ Quick Start
-
-Sitare provides a simple hook that gives you everything you need to build a password input.
-
 ```tsx
-import { useSitare } from '@vassale/sitare';
+import { useViraPassword } from '@virastack/password-toggle';
 
-function PasswordInput() {
-  const { inputProps, btnProps } = useSitare();
+function App() {
+  const { inputProps, btnProps } = useViraPassword();
 
   return (
-    <div className="password-input-container">
+    <div>
       <input {...inputProps} placeholder="Enter password" />
       <button {...btnProps} />
     </div>
@@ -58,49 +51,22 @@ function PasswordInput() {
 }
 ```
 
-## 📦 Features & API
+## Explore the ViraStack Ecosystem
 
-Sitare is designed to be flexible. You can customize icons, merge props, and control state manually if needed.
+- [**AI Rules**](https://github.com/virastack/ai-rules) – Standardized AI rules for consistent code generation
+- [**Next.js Boilerplate**](https://github.com/virastack/nextjs-boilerplate) – Full-featured, scalable Next.js starter kit
+- [**Input Mask**](https://github.com/virastack/input-mask) – Lightweight, zero-dependency input masking library
+- [**Password Toggle**](https://github.com/virastack/password-toggle) – Accessible, headless password visibility component
 
-### With Custom Icons
+... and more at [**virastack.com**](https://virastack.com)
 
-```tsx
-const { inputProps, btnProps } = useSitare({
-  icons: {
-    show: <MyEyeIcon />,
-    hide: <MyEyeOffIcon />
-  }
-});
-```
+---
 
-### API Reference
-
-#### Options
-
-| Name | Type | Default | Description |
-|------|------|---------|-------------|
-| `defaultVisible` | `boolean` | `false` | Initial visibility state. |
-| `icons` | `{ show: ReactNode, hide: ReactNode }` | `undefined` | Custom icons for show/hide states. |
-| `disabled` | `boolean` | `false` | Disables both input and button. |
-| `readOnly` | `boolean` | `false` | Sets input to read-only and disables button. |
-| `id` | `string` | `undefined` | Custom ID for the input. |
-| `inputProps` | `InputHTMLAttributes` | `undefined` | Props to merge into the input. |
-| `btnProps` | `ButtonHTMLAttributes` | `undefined` | Props to merge into the button. |
-
-#### Returns
-
-| Name | Type | Description |
-|------|------|-------------|
-| `inputProps` | `object` | Props to spread onto the `<input>` element. |
-| `btnProps` | `object` | Props to spread onto the `<button>` element. |
-| `isVisible` | `boolean` | Current visibility state. |
-| `toggle` | `() => void` | Function to toggle visibility manually. |
-| `setVisible` | `(visible: boolean) => void` | Function to set visibility manually. |
-
-For more details, please check the **[official documentation](https://sitare.omergulcicek.com)**.
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-Built with ❤️ by [Ömer Gülçiçek](https://omergulcicek.com)
+<div align="center">
+  <p>Built with precision by <a href="https://omergulcicek.com"><b>Ömer Gülçiçek</b></a></p>
+  <p>
+    <a href="https://github.com/omergulcicek">
+      <img src="https://img.shields.io/github/followers/omergulcicek?label=Follow&style=social" alt="Follow Ömer Gülçiçek" />
+    </a>
+  </p>
+</div>

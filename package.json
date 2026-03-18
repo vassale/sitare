@@ -1,7 +1,21 @@
 {
-  "name": "@vassale/sitare",
+  "name": "@virastack/password-toggle",
   "version": "1.0.0",
   "description": "Fully accessible and customizable password visibility hook for React.",
+  "author": {
+    "name": "Ömer Gülçiçek (ViraStack)",
+    "email": "iletisim@omergulcicek.com",
+    "url": "https://omergulcicek.com"
+  },
+  "license": "MIT",
+  "homepage": "https://virastack.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virastack/password-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/virastack/password-toggle/issues"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -12,10 +26,13 @@
       "require": "./dist/index.js"
     }
   },
-  "sideEffects": false,
   "files": [
     "dist"
   ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -23,18 +40,16 @@
     "lint": "tsc"
   },
   "keywords": [
+    "virastack",
     "react",
     "hook",
-    "password",
-    "visibility",
-    "toggle",
+    "password-toggle",
+    "password-visibility",
     "accessibility",
     "a11y",
-    "input",
-    "form"
+    "form-validation",
+    "dx"
   ],
-  "author": "Ömer Gülçiçek <iletisim@omergulcicek.com> (https://omergulcicek.com)",
-  "license": "MIT",
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
@@ -50,8 +65,5 @@
     "tsup": "^8.0.2",
     "typescript": "^5.3.3",
     "vitest": "^1.3.1"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }

@@ -1,3 +1,3 @@
 export * from './core/logic';
-export * from './react/useSitare';
+export * from './react/useViraPassword';
 export * from './icons';

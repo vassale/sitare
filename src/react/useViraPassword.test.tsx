@@ -1,11 +1,11 @@
 import { renderHook, act } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
-import { useSitare } from './useSitare';
+import { useViraPassword } from './useViraPassword';
 import React from 'react';
 
-describe('useSitare', () => {
+describe('useViraPassword', () => {
   it('should return default values', () => {
-    const { result } = renderHook(() => useSitare());
+    const { result } = renderHook(() => useViraPassword());
 
     expect(result.current.isVisible).toBe(false);
     expect(result.current.inputProps.type).toBe('password');
@@ -13,7 +13,7 @@ describe('useSitare', () => {
   });
 
   it('should toggle visibility', () => {
-    const { result } = renderHook(() => useSitare());
+    const { result } = renderHook(() => useViraPassword());
 
     act(() => {
       result.current.toggle();
@@ -32,14 +32,14 @@ describe('useSitare', () => {
   });
 
   it('should respect defaultVisible prop', () => {
-    const { result } = renderHook(() => useSitare({ defaultVisible: true }));
+    const { result } = renderHook(() => useViraPassword({ defaultVisible: true }));
 
     expect(result.current.isVisible).toBe(true);
     expect(result.current.inputProps.type).toBe('text');
   });
 
   it('should handle disabled state', () => {
-    const { result } = renderHook(() => useSitare({ disabled: true }));
+    const { result } = renderHook(() => useViraPassword({ disabled: true }));
 
     expect(result.current.inputProps.disabled).toBe(true);
     expect(result.current.btnProps.disabled).toBe(true);
@@ -53,7 +53,7 @@ describe('useSitare', () => {
   });
 
   it('should handle readOnly state', () => {
-    const { result } = renderHook(() => useSitare({ readOnly: true }));
+    const { result } = renderHook(() => useViraPassword({ readOnly: true }));
 
     expect(result.current.inputProps.readOnly).toBe(true);
     expect(result.current.btnProps.disabled).toBe(true); // Button should be disabled for readOnly inputs too
@@ -70,7 +70,7 @@ describe('useSitare', () => {
     const userOnClick = vi.fn();
     const userClassName = 'custom-class';
 
-    const { result } = renderHook(() => useSitare({
+    const { result } = renderHook(() => useViraPassword({
       btnProps: {
         onClick: userOnClick,
         className: userClassName,
@@ -95,7 +95,7 @@ describe('useSitare', () => {
     const CustomShow = () => <div>Show</div>;
     const CustomHide = () => <div>Hide</div>;
 
-    const { result } = renderHook(() => useSitare({
+    const { result } = renderHook(() => useViraPassword({
       icons: {
         show: <CustomShow />,
         hide: <CustomHide />
@@ -115,7 +115,7 @@ describe('useSitare', () => {
   });
 
   it('should generate correct ARIA attributes', () => {
-    const { result } = renderHook(() => useSitare({ id: 'test-id' }));
+    const { result } = renderHook(() => useViraPassword({ id: 'test-id' }));
 
     expect(result.current.inputProps.id).toBe('test-id');
     expect(result.current.btnProps['aria-controls']).toBe('test-id');
