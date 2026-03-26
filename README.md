@@ -28,7 +28,7 @@ Fully accessible and customizable password visibility hook for React.
 - 🔄 **Prop Merging:** Safely merges user props with hook-generated props to prevent overrides.
 - 🔒 **State Sync:** Automatically handles `disabled` and `readOnly` states for a consistent UX.
 
-### [Read the docs →](https://virastack.com/password)
+### [Read the docs →](https://virastack.com/password-toggle/)
 
 ## Quick Start
 

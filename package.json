@@ -1,6 +1,6 @@
 {
   "name": "@virastack/password-toggle",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Fully accessible and customizable password visibility hook for React.",
   "author": {
     "name": "Ömer Gülçiçek (ViraStack)",
