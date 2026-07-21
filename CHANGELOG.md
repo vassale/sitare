@@ -1,20 +1,13 @@
 # Changelog
 
-## [v1.0.2] - 2026-03-26
-
-- Readme updated and links fixed.
-
-## [v1.0.1] - 2026-03-26
-
-- Readme updated, new projects added to the ecosystem, and readme hero image renewed.
-
-## [v1.0.0] - 2026-03-18
+## [v1.0.0] - 2026-07-22
 
 ### Initial Release
 
-- **@virastack/password-toggle**: A fully accessible and customizable password visibility hook for React is now live!
+- **@virastack/password**: A fully accessible and customizable password visibility hook for React is now live!
 - **Architecture**: Logic is separated from React state, making it adaptable and clean.
 - **Hook**: `useViraPassword` provides a simple, robust "React-First" solution.
+- **React Server Components**: Added `'use client'` directive for Next.js App Router and TanStack Start compatibility.
 
 ### Features
 

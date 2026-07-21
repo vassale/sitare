@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useId, useCallback, ReactNode } from 'react';
 import { EyeIcon, EyeOffIcon } from '../icons';
 import { getInputType, getButtonAriaAttributes, getInputAriaAttributes } from '../core/logic';

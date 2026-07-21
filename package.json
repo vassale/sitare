@@ -1,6 +1,6 @@
 {
-  "name": "@virastack/password-toggle",
-  "version": "1.0.2",
+  "name": "@virastack/password",
+  "version": "1.0.0",
   "description": "Fully accessible and customizable password visibility hook for React.",
   "author": {
     "name": "Ömer Gülçiçek (ViraStack)",
@@ -11,10 +11,10 @@
   "homepage": "https://virastack.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/virastack/password-toggle.git"
+    "url": "git+https://github.com/virastack/password.git"
   },
   "bugs": {
-    "url": "https://github.com/virastack/password-toggle/issues"
+    "url": "https://github.com/virastack/password/issues"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -29,6 +29,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "engines": {
     "node": ">=18"
@@ -43,7 +46,7 @@
     "virastack",
     "react",
     "hook",
-    "password-toggle",
+    "password",
     "password-visibility",
     "accessibility",
     "a11y",
@@ -51,8 +54,8 @@
     "dx"
   ],
   "peerDependencies": {
-    "react": ">=18",
-    "react-dom": ">=18"
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
