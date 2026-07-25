@@ -1,34 +1,29 @@
 <div align="center">
-  <img src="./public/password.jpg" alt="Vira Stack Password" />
+
+<img src="https://raw.githubusercontent.com/virastack/password/main/assets/virastack-password.png" alt="ViraStack Password" height="120" style="max-width: 100%;" />
+
+*Fully accessible and customizable password visibility hook for React.*
+
+[![ViraStack Password](https://img.shields.io/badge/ViraStack-Password-%23ff2056)](https://virastack.com/password/)
+[![npm version](https://img.shields.io/npm/v/@virastack/password)](https://www.npmjs.com/package/@virastack/password)
+[![npm downloads](https://img.shields.io/npm/dt/@virastack/password)](https://www.npmjs.com/package/@virastack/password)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@virastack/password)](https://bundlephobia.com/package/@virastack/password)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/virastack/password/blob/main/LICENSE)
+[![@virastack](https://img.shields.io/badge/-%40virastack-black?logo=x&logoColor=white)](https://x.com/virastack)
+
 </div>
 
-<br />
+---
 
-<div align="center">
-  <a href="https://www.npmjs.com/package/@virastack/password">
-    <img src="https://img.shields.io/npm/v/@virastack/password" alt="npm version" />
-  </a>
-  <a href="https://www.npmjs.com/package/@virastack/password">
-    <img src="https://img.shields.io/npm/dt/@virastack/password" alt="npm downloads" />
-  </a>
-  <a href="https://bundlephobia.com/package/@virastack/password">
-    <img src="https://img.shields.io/bundlephobia/minzip/@virastack/password" alt="bundle size" />
-  </a>
-</div>
+### [Read the full documentation →](https://virastack.com/password/)
 
-<br />
+## Why ViraStack Password?
 
-# ViraStack Password Toggle
-
-Fully accessible and customizable password visibility hook for React.
-
-- ♿ **Accessibility First:** Fully ARIA compliant out of the box for better screen reader support.
-- 🧩 **Framework Agnostic:** Logic is separated from React state, making it adaptable and clean.
-- 🎨 **Smart Defaults:** Includes minimal SVG icons by default, so you can start using it immediately.
-- 🔄 **Prop Merging:** Safely merges user props with hook-generated props to prevent overrides.
-- 🔒 **State Sync:** Automatically handles `disabled` and `readOnly` states for a consistent UX.
-
-### [Read the docs →](https://virastack.com/password/)
+- **Accessibility First:** Fully ARIA compliant out of the box for better screen reader support.
+- **Framework Agnostic:** Logic is separated from React state, making it adaptable and clean.
+- **Smart Defaults:** Includes minimal SVG icons by default, so you can start using it immediately.
+- **Prop Merging:** Safely merges user props with hook-generated props to prevent overrides.
+- **State Sync:** Automatically handles `disabled` and `readOnly` states for a consistent UX.
 
 ## Quick Start
 
@@ -57,7 +52,7 @@ Discover all ViraStack tools, libraries, and boilerplates at [**virastack.com**]
 
 ## License
 
-Licensed under the <a href="https://github.com/virastack/password/blob/main/LICENSE">MIT License</a>.
+Licensed under the [MIT License](https://github.com/virastack/password/blob/main/LICENSE).
 
 ## Maintainer
 
