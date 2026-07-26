@@ -1,6 +1,12 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/virastack/password/main/assets/virastack-password.png" alt="ViraStack Password" height="120" style="max-width: 100%;" />
+<a href="https://github.com/virastack/password" target="_blank" rel="noreferrer">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/virastack/password/main/assets/logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/virastack/password/main/assets/logo-light.png">
+    <img src="https://raw.githubusercontent.com/virastack/password/main/assets/logo-light.png" alt="ViraStack Password" height="120" style="max-width: 100%;" />
+  </picture>
+</a>
 
 *Fully accessible and customizable password visibility hook for React.*
 
