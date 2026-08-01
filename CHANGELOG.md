@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.0.1] - 2026-08-01
+
+### Documentation
+
+- **README logos**: Fixed broken npm README images. Light/dark logo assets now load from `assets/logo-light.png` and `assets/logo-dark.png` via raw GitHub URLs.
+
 ## [v1.0.0] - 2026-07-22
 
 ### Initial Release
