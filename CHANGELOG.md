@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.0.2] - 2026-08-01
+
+### Documentation
+
+- **README**: Removed the Bundlephobia badge (Shields.io often rate-limits the upstream API on npm).
+
 ## [v1.0.1] - 2026-08-01
 
 ### Documentation

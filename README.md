@@ -13,7 +13,6 @@
 [![ViraStack Password](https://img.shields.io/badge/ViraStack-Password-%23ff2056)](https://virastack.com/password/)
 [![npm version](https://img.shields.io/npm/v/@virastack/password)](https://www.npmjs.com/package/@virastack/password)
 [![npm downloads](https://img.shields.io/npm/dt/@virastack/password)](https://www.npmjs.com/package/@virastack/password)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/@virastack/password)](https://bundlephobia.com/package/@virastack/password)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/virastack/password/blob/main/LICENSE)
 [![@virastack](https://img.shields.io/badge/-%40virastack-black?logo=x&logoColor=white)](https://x.com/virastack)
 
